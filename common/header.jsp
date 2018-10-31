@@ -13,8 +13,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<title></title>
-		<!--<link rel="stylesheet" href="../element/element.css" />-->
-		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+		<link rel="stylesheet" href="../element/element.css" />
 		<link rel="stylesheet" type="text/css" href="../css/index.css" />
 		<link rel="stylesheet" type="text/css" href="https://static.htxq.net/resources/htxqgw/css/main.css">
 		<script type="text/javascript" src="https://static.htxq.net/resources/js/jquery-2.0.3-he.min.js"></script>
@@ -52,10 +51,10 @@
 			</header>
 		</div>
 		<div class="mask"></div>
-		<div class="login_alert">
+		<div class="login_alert" id="main">
 			<div class="alert_title">登录/注册</div>
 			<div class="alert_content">
-				<el-button>就这样</el-button>
+				<el-button>Button</el-button>
 			</div>
 		</div>
 		<script type="text/javascript" src="https://htxq.oss-cn-beijing.aliyuncs.com/resources/js/vue.min.js"></script>
