@@ -1,3 +1,5 @@
+/* @import url("../css/bootstrap.min.css"); */
+/* @import "../css/bootstrap-select.min.css"; */
 body {
 	height: 100%;
 }
@@ -50,8 +52,160 @@ body {
 	text-align: center;
 	color: #323232;
 	font-size: 18px;
+	line-height: 1;
+}
+
+.alert_close {
+	position: absolute;
+	top: 0;
+	right: 37px;
+	cursor: pointer;
 }
 
 .alert_content {
 	margin-top: 30px;
+}
+
+.content_phone {
+	font-size: 14px;
+	border-radius: 5px;
+	margin-bottom: 18px;
+}
+
+.code {
+	height: 44px;
+	border-right: none;
+	border-radius: 5px 0 0 5px;
+	color: #363535;
+	padding: 0 18px;
+	width: 75px;
+	border-color: #dddddd;
+	background-color: #f4f4f4;
+	vertical-align: bottom;
+}
+
+select {
+	appearance:none;
+  -moz-appearance:none;
+	-webkit-appearance:none;
+	background: url('../images/arrow.png') no-repeat scroll right center transparent;
+	background-origin:content-box;
+}
+
+select::-ms-expand { display: none; }
+
+.phone {
+	border-radius: 0 5px 5px 0;
+	width: 261px;
+	padding-right: 15px;
+}
+
+input {
+	height: 44px;
+	font-size: 14px;
+	background-color: #f4f4f4;
+	border: 1px solid #dddddd;
+	padding-left: 18px;
+	color: #323232;
+}
+
+input:focus {
+	background-color: #ffffff;
+}
+
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+}
+input[type="number"]{
+		-moz-appearance: textfield;
+} */
+
+.content_imgCode {
+	position: relative;
+	margin-bottom: 18px;
+}
+
+.img_code {
+	width: 100%;
+	border-radius: 5px;
+	padding-right: 85px;
+}
+
+.content_img {
+	width: 64px;
+	height: 26px;
+	background-color: #333;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 9px;
+}
+
+.content_msg {
+	margin-bottom: 18px;
+}
+
+.msg_code {
+	border-radius: 5px;
+	width: 204px;
+	margin-right: 14px;
+}
+
+.msg_button {
+	width: 118px;
+}
+
+button {
+	height: 44px;
+	border-radius: 5px;
+	border: 1px solid #DBB867;
+	font-size: 14px;
+	cursor: pointer;
+	color: #846D34;
+	background-color: #DBB867;
+}
+
+button[disabled] {
+	background-color: #f4f4f4;
+	color: #777777;
+	border: 1px solid #dddddd;
+}
+
+.content_submit {
+	margin-bottom: 37px;
+}
+
+.submit_button {
+	width: 100%;
+}
+
+.server_tip {
+	color: #777777;
+	font-family: 'lantingxihei';
+	font-size: 14px;
+	text-align: center;
+	line-height: 1;
+}
+
+.server_title {
+	color: #323232;
+	cursor: pointer;
+}
+
+input::-webkit-input-placeholder {
+	/* WebKit, Blink, Edge */
+	color: #777777;
+}
+input:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: #777777;
+}
+input::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	color: #777777;
+}
+input:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: #777777;
 }
