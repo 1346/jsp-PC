@@ -20,6 +20,61 @@
     <link rel="stylesheet" type="text/css" href="https://static.htxq.net/resources/htxqgw/css/videoDetails.css">
     <script type="text/javascript" src="https://static.htxq.net/resources/js/jquery-2.0.3-he.min.js"></script>
     <script type="text/javascript" src="https://g.alicdn.com/de/prismplayer/1.9.4/prism-min.js"></script>
+    <style>
+        .video_mask {
+            width: 100%;
+            height: 100%;
+            background-color: #0000006b;
+            z-index: 1000;
+            position: absolute;
+        }
+        .video_alert {
+            padding: 54px 20px 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            position: absolute;
+            z-index: 1001;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: auto;
+            width: 324px;
+            height: 184px;
+            box-sizing: border-box;
+        }
+        .video_alert_close {
+            position: absolute;
+            top: 0;
+            right: 20px;
+            cursor: pointer;
+        }
+        .video_alert_txt {
+            color: #323232;
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 24px;
+        }
+        button {
+            width: 134px;
+            height: 44px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .button_no {
+            background-color: #ffffff;
+            color: #323232;
+            border: 1px solid #323232;
+            box-sizing: border-box;
+        }
+        .button_to {
+            background-color: #323232;
+            color: #ffffff;
+            border: none;
+            float: right;
+        }
+    </style>
 </head>
 <body>
 <jsp:include page="../common/header.jsp"></jsp:include>
@@ -47,6 +102,14 @@
                 </div>
             </div>
 
+<div class="video_mask"></div>
+<div class="video_alert">
+    <img src="../images/close.png" class="video_alert_close" />
+    <div class="video_alert_txt">您不是社员，无法观看。是否购买会员进行观看？</div>
+    <div class="video_alert_button">
+        <button class="button_no">暂不</button><button class="button_to">立即购买</button>
+    </div>
+</div>
 
         </div>
         <div class="video_introduce" id="videoIntroduce">

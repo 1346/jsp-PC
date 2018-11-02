@@ -50,6 +50,9 @@
 					<div class="nav_login" onclick="showLogin()">
 						登录/注册
 					</div>
+					<div class="nav_login">
+						退出登录
+					</div>
 				</div>
 			</header>
 		</div>
